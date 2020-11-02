@@ -82,10 +82,10 @@ On_IWhite='\033[0;107m'   # White
 repositorioLimpio()
 {
     reset
-    V_LINEA=$(printf "%-30s" "#")
-    echo -e "$Green${V_LINEA// /*}\n"
+    V_LINEA=$(printf "%-60s" "#")
+    echo -e "$Green${V_LINEA// /#}\n"
     echo -e "$Green\t\tEL REPOSITORIO NO POSEE CAMBIOS...\n"
-    echo -e "$Green${V_LINEA// /*}\n$Color_Off"
+    echo -e "$Green${V_LINEA// /#}\n$Color_Off"
 }
 
 contador=0
