@@ -186,7 +186,7 @@ else
 
     V_GITADD=$(git add . 2>&1)
     V_GITCOMMIT=$(git commit -am "$V_MENSAJE" 2>&1)
-    V_GITPUSH=$(git push origin RAMA_ERROR --porcelain 2>&1)
+    V_GITPUSH=$(git push origin main --porcelain 2>&1)
     
     if [[ "$V_GITPUSH" == *"Done"* ]]
     then
