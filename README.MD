@@ -273,6 +273,7 @@ pushError()
     echo -e "$Red${V_LINEA// /#}\n"
     echo -e "$Red\t[ - ERROR - ]\tERROR EN EL VERSIONAMIENTO\n"
     echo -e "$Red\t\t\tVERIFIQUE EL ERROR\n"
+    echo -e "$Red\n\t(Verificar si no se edito el README.MD)\n\n"
     echo -e "$Red${V_LINEA// /#}\n\n$Color_Off"
 
     echo -e "$Yellow\tMensaje:$White\n\t$V_GITPUSH\n$Color_Off"
@@ -364,3 +365,4 @@ fi
 | 02/11/2020 | 17:53:51:474 | Se inicializa el repositorio - Se modificaron 9 archivo(s) - ( ENVY.TXT GLUTTONY.TXT GREED.TXT LUST.TXT PRIDE.TXT README.MD SLOTH.TXT WRATH.TXT gitPush.sh ) | PonyoBook | sbarr |
 | 02/11/2020 | 17:58:01:379 | Se actualiza el repositorio - Se modificaron 2 archivo(s) - ( README.MD gitPush.sh ) | PonyoBook | sbarr |
 | 02/11/2020 | 18:00:02:547 | Se actualiza el repositorio - Se modificaron 1 archivo(s) - ( gitPush.sh ) | PonyoBook | sbarr |
+| 02/11/2020 | 18:03:56:328 | Se actualiza el gitPush y Readme - Se modificaron 2 archivo(s) - ( README.MD gitPush.sh ) | PonyoBook | sbarr |

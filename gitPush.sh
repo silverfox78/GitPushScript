@@ -140,6 +140,7 @@ pushError()
     echo -e "$Red${V_LINEA// /#}\n"
     echo -e "$Red\t[ - ERROR - ]\tERROR EN EL VERSIONAMIENTO\n"
     echo -e "$Red\t\t\tVERIFIQUE EL ERROR\n"
+    echo -e "$Red\n\t(Verificar si no se edito el README.MD)\n\n"
     echo -e "$Red${V_LINEA// /#}\n\n$Color_Off"
 
     echo -e "$Yellow\tMensaje:$White\n\t$V_GITPUSH\n$Color_Off"
@@ -208,9 +209,6 @@ else
         done
 
         if [ \( "$V_CONT" -eq "$contador" -a "$limpio" = true \) ] ; then
-            echo "Contador original: $contador"
-            echo "Contador nuevo: $V_CONT"
-            echo "Limpio: $limpio"
             pushOK
         else
             pushRevisar
