@@ -26,3 +26,4 @@ $ touch PRIDE.TXT GREED.TXT LUST.TXT ENVY.TXT GLUTTONY.TXT WRATH.TXT SLOTH.TXT
 |-------|------|---------|-------------|---------|
 | 02/11/2020 | 14:55:41:480 | Se edita el README para registrar los push... - Se modificaron 2 archivo(s) - ( README.MD gitPush.sh ) | PonyoBook | sbarr |
 | 02/11/2020 | 15:13:44:779 | Actualizacion del repositorio - Se modificaron 2 archivo(s) - ( README.MD gitPush.sh ) | PonyoBook | sbarr |
+| 02/11/2020 | 15:15:34:044 | Actualizacion del repositorio - Se modificaron 1 archivo(s) - ( gitPush.sh ) | PonyoBook | sbarr |
