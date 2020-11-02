@@ -131,6 +131,7 @@ pushRevisar()
     echo -e "$Purple${V_LINEA// /#}\n"
     echo -e "$Purple\t[ - REVISAR - ]\tEXISTEN DIFERENCIAS EN EL REPOSITORIO\n"
     echo -e "$Purple\t\t\tVALIDE LOS CAMBIOS...\n"
+    echo -e "$Purple\n\t(Verificar si no se edito el README.MD)\n\n"
     echo -e "$Purple${V_LINEA// /#}\n$Color_Off"
 }
 
@@ -140,9 +141,7 @@ pushError()
     echo -e "$Red${V_LINEA// /#}\n"
     echo -e "$Red\t[ - ERROR - ]\tERROR EN EL VERSIONAMIENTO\n"
     echo -e "$Red\t\t\tVERIFIQUE EL ERROR\n"
-    echo -e "$Red\n\t(Verificar si no se edito el README.MD)\n\n"
     echo -e "$Red${V_LINEA// /#}\n\n$Color_Off"
-
     echo -e "$Yellow\tMensaje:$White\n\t$V_GITPUSH\n$Color_Off"
 }
 
