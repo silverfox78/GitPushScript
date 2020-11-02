@@ -244,7 +244,7 @@ repositorioConCambios()
     for fileTmp in "${archivos[@]}"
         do
             v_tmp=$((v_tmp+1))
-            echo -e "$Green\t\t$v_tmp.- $Color_Off$file"
+            echo -e "$Green\t\t$v_tmp.- $Color_Off$fileTmp"
         done
 
     echo -e "$Color_Off\n\n"
@@ -362,3 +362,4 @@ fi
 | Fecha | Hora | Mensaje | Dispositivo | Usuario |
 |-------|------|---------|-------------|---------|
 | 02/11/2020 | 17:53:51:474 | Se inicializa el repositorio - Se modificaron 9 archivo(s) - ( ENVY.TXT GLUTTONY.TXT GREED.TXT LUST.TXT PRIDE.TXT README.MD SLOTH.TXT WRATH.TXT gitPush.sh ) | PonyoBook | sbarr |
+| 02/11/2020 | 17:58:01:379 | Se actualiza el repositorio - Se modificaron 2 archivo(s) - ( README.MD gitPush.sh ) | PonyoBook | sbarr |

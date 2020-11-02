@@ -111,7 +111,7 @@ repositorioConCambios()
     for fileTmp in "${archivos[@]}"
         do
             v_tmp=$((v_tmp+1))
-            echo -e "$Green\t\t$v_tmp.- $Color_Off$file"
+            echo -e "$Green\t\t$v_tmp.- $Color_Off$fileTmp"
         done
 
     echo -e "$Color_Off\n\n"
