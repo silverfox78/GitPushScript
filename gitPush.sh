@@ -119,7 +119,6 @@ repositorioConCambios()
 
 pushOK()
 {
-    reset
     V_LINEA=$(printf "%-60s" "#")
     echo -e "$Green${V_LINEA// /#}\n"
     echo -e "$Green\t[ - O K - ]\tSE HA SUBIDO CON EXITO LOS ARCHIVOS\n"
@@ -128,7 +127,6 @@ pushOK()
 
 pushRevisar()
 {
-    reset
     V_LINEA=$(printf "%-60s" "#")
     echo -e "$Purple${V_LINEA// /#}\n"
     echo -e "$Purple\t[ - REVISAR - ]\tEXISTEN DIFERENCIAS EN EL REPOSITORIO\n"
@@ -138,7 +136,6 @@ pushRevisar()
 
 pushError()
 {
-    reset
     V_LINEA=$(printf "%-60s" "#")
     echo -e "$Red${V_LINEA// /#}\n"
     echo -e "$Red\t[ - ERROR - ]\tERROR EN EL VERSIONAMIENTO\n"
