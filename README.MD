@@ -368,3 +368,4 @@ fi
 | 02/11/2020 | 18:08:35:741 | Se actualiza pecado: Greed - Se modificaron 1 archivo(s) - ( GREED.TXT ) | PonyoBook | sbarr |
 | 02/11/2020 | 18:08:56:853 | Se actualiza pecado: Lust - Se modificaron 1 archivo(s) - ( LUST.TXT ) | PonyoBook | sbarr |
 | 02/11/2020 | 18:09:43:559 | Se actualiza pecado: Pride - Se modificaron 1 archivo(s) - ( PRIDE.TXT ) | PonyoBook | sbarr |
+| 02/11/2020 | 18:10:11:723 | Se actualiza pecado: Sloth - Se modificaron 1 archivo(s) - ( SLOTH.TXT ) | PonyoBook | sbarr |
