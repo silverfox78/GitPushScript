@@ -117,6 +117,36 @@ repositorioConCambios()
     echo -e "$Color_Off\n\n"
 }
 
+pushOK()
+{
+    reset
+    V_LINEA=$(printf "%-60s" "#")
+    echo -e "$Green${V_LINEA// /#}\n"
+    echo -e "$Green\t[ - O K - ]\tSE HA SUBIDO CON EXITO LOS ARCHIVOS\n"
+    echo -e "$Green${V_LINEA// /#}\n$Color_Off"
+}
+
+pushRevisar()
+{
+    reset
+    V_LINEA=$(printf "%-60s" "#")
+    echo -e "$Purple${V_LINEA// /#}\n"
+    echo -e "$Purple\t[ - REVISAR - ]\tEXISTEN DIFERENCIAS EN EL REPOSITORIO\n"
+    echo -e "$Purple\t\t\tVALIDE LOS CAMBIOS...\n"
+    echo -e "$Purple${V_LINEA// /#}\n$Color_Off"
+}
+
+pushError()
+{
+    reset
+    V_LINEA=$(printf "%-60s" "#")
+    echo -e "$Red${V_LINEA// /#}\n"
+    echo -e "$Red\t[ - ERROR - ]\tERROR EN EL VERSIONAMIENTO\n"
+    echo -e "$Red\t\t\tVERIFIQUE EL ERROR\n"
+    echo -e "$Red${V_LINEA// /#}\n\n$Color_Off"
+
+    echo -e "$Yellow\tMensaje:$White\n\t$V_GITPUSH\n$Color_Off"
+}
 
 contador=0
 archivos=()
@@ -164,37 +194,29 @@ else
     if [[ "$V_GITPUSH" == *"Done"* ]]
     then
         V_HASH_COMMIT=$(git rev-parse HEAD)
-        echo "Has Commit: $V_HASH_COMMIT"
-
         V_CONT=0
-        V_FILE_COMMIT=()
         for fileCommit in `git diff-tree --no-commit-id --name-only -r $V_HASH_COMMIT`
         do
             V_CONT=$((V_CONT+1))
-            V_FILE_COMMIT+=($file)
-            echo "$V_CONT.- Archivo: $fileCommit"
         done
 
         #Se suma el README.MD
         contador=$((contador+1))
-        echo "El Commit contiene $V_CONT archivos - Se esperaban: $contador"
 
         #Evaluamos el repositorio
         limpio=true
         for file in `git status --porcelain | sed s/^...//`
         do
             limpio=false
-            echo "El repositorio contiene archivos no versionados, verifique"
         done
 
         if [ \( "$V_CONT" -eq "$contador" -a "$limpio" = true \) ] ; then
-            echo "Cambio subido con Exito"
+            pushOK
         else
-            echo "Hay diferencias en el repositorio, verifique"
+            pushRevisar
         fi
     else
-        echo "Error al subir los cambios"
-        echo "Mensaje: $V_GITPUSH"
+        pushError
         git reset .
     fi
 fi

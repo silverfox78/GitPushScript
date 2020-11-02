@@ -36,3 +36,4 @@ $ touch PRIDE.TXT GREED.TXT LUST.TXT ENVY.TXT GLUTTONY.TXT WRATH.TXT SLOTH.TXT
 | 02/11/2020 | 16:36:18:704 | Actualizacion del repositorio - Se modificaron 1 archivo(s) - ( gitPush.sh ) | PonyoBook | sbarr |
 | 02/11/2020 | 16:40:27:161 | Actualizacion del repositorio - Se modificaron 1 archivo(s) - ( gitPush.sh ) | PonyoBook | sbarr |
 | 02/11/2020 | 16:40:56:459 | Actualizacion del repositorio - Se modificaron 1 archivo(s) - ( gitPush.sh ) | PonyoBook | sbarr |
+| 02/11/2020 | 16:57:23:877 | Actualizacion del repositorio - Se modificaron 1 archivo(s) - ( gitPush.sh ) | PonyoBook | sbarr |
