@@ -209,6 +209,10 @@ else
 
         if [ \( "$V_CONT" -eq "$contador" -a "$limpio" = true \) ] ; then
             pushOK
+
+            echo "\n\n"
+
+            pushRevisar
         else
             pushRevisar
         fi
