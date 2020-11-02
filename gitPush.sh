@@ -127,7 +127,7 @@ pushOK()
 
 pushRevisar()
 {
-    V_LINEA=$(printf "%-60s" "#")
+    V_LINEA=$(printf "%-70s" "#")
     echo -e "$Purple${V_LINEA// /#}\n"
     echo -e "$Purple\t[ - REVISAR - ]\tEXISTEN DIFERENCIAS EN EL REPOSITORIO\n"
     echo -e "$Purple\t\t\tVALIDE LOS CAMBIOS...\n"
