@@ -1,8 +1,8 @@
 # GitPush - Script de Ejemplo
 
-|Dato|Informacion|
-|----|-----------|
-|Url Medium||
+| Dato       | Informacion                                                             |
+|------------|-------------------------------------------------------------------------|
+| Url Medium | https://samuelbarrerabastidas.medium.com/simplificando-git-cbfaa259d1c2 |
 
 
 ------
@@ -370,3 +370,4 @@ fi
 | 02/11/2020 | 18:09:43:559 | Se actualiza pecado: Pride - Se modificaron 1 archivo(s) - ( PRIDE.TXT ) | PonyoBook | sbarr |
 | 02/11/2020 | 18:10:11:723 | Se actualiza pecado: Sloth - Se modificaron 1 archivo(s) - ( SLOTH.TXT ) | PonyoBook | sbarr |
 | 02/11/2020 | 18:10:38:645 | Se actualiza pecado: Wrath - Se modificaron 1 archivo(s) - ( WRATH.TXT ) | PonyoBook | sbarr |
+| 02/11/2020 | 18:13:26:173 | Se actualiza el README, con la URL del Articulo - Se modificaron 1 archivo(s) - ( README.MD ) | PonyoBook | sbarr |
