@@ -152,7 +152,6 @@ for file in `git status --porcelain | sed s/^...//`
     do
         contador=$((contador+1))
         archivos+=($file)
-        echo "$contador.- Archivo: $file"
     done
 
 if [[ $contador == 0 ]]
