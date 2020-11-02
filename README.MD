@@ -366,3 +366,4 @@ fi
 | 02/11/2020 | 18:06:11:029 | Se actualiza el gitPush y Readme - v2 - Se modificaron 2 archivo(s) - ( README.MD gitPush.sh ) | PonyoBook | sbarr |
 | 02/11/2020 | 18:08:05:517 | Se actualiza pecado: Gluttony - Se modificaron 1 archivo(s) - ( GLUTTONY.TXT ) | PonyoBook | sbarr |
 | 02/11/2020 | 18:08:35:741 | Se actualiza pecado: Greed - Se modificaron 1 archivo(s) - ( GREED.TXT ) | PonyoBook | sbarr |
+| 02/11/2020 | 18:08:56:853 | Se actualiza pecado: Lust - Se modificaron 1 archivo(s) - ( LUST.TXT ) | PonyoBook | sbarr |
