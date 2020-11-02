@@ -285,7 +285,6 @@ for file in `git status --porcelain | sed s/^...//`
     do
         contador=$((contador+1))
         archivos+=($file)
-        echo "$contador.- Archivo: $file"
     done
 
 if [[ $contador == 0 ]]
@@ -366,3 +365,4 @@ fi
 | 02/11/2020 | 18:00:02:547 | Se actualiza el repositorio - Se modificaron 1 archivo(s) - ( gitPush.sh ) | PonyoBook | sbarr |
 | 02/11/2020 | 18:03:56:328 | Se actualiza el gitPush y Readme - Se modificaron 2 archivo(s) - ( README.MD gitPush.sh ) | PonyoBook | sbarr |
 | 02/11/2020 | 18:05:06:764 | Se actualiza el gitPush y Readme - v2 - Se modificaron 2 archivo(s) - ( README.MD gitPush.sh ) | PonyoBook | sbarr |
+| 02/11/2020 | 18:05:42:385 | Se actualiza el gitPush y Readme - v2 - Se modificaron 1 archivo(s) - ( README.MD ) | PonyoBook | sbarr |
