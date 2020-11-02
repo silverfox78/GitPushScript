@@ -104,7 +104,17 @@ repositorioConCambios()
     echo -e "$Green\tUsuario: $Color_Off$V_USUARIO"
     echo -e "$Green\tMaquina: $Color_Off$HOSTNAME"
 
-    echo -e "$Yellow\n\tMensaje:\n\t> $Color_Off$V_MENSAJE"
+    echo -e "$Yellow\n\tMensaje:\n\t> $Color_Off$V_MENSAJE\n\n"
+
+    echo -e "$Green\tLista de Archivos:"
+    v_tmp=0
+    for fileTmp in "${archivos[@]}"
+        do
+            v_tmp=$((v_tmp+1))
+            echo -e "$Green\t\t$v_tmp.- $Color_Off$file"
+        done
+
+    echo -e "$Color_Off\n\n"
 }
 
 contador=0
