@@ -50,6 +50,20 @@ else
     
     if [[ "$V_GITPUSH" == *"Done"* ]]
     then
+        V_HASH_COMMIT=$(git rev-parse HEAD)
+        echo "Has Commit: $V_HASH_COMMIT"
+
+        V_CONT=0
+        V_FILE_COMMIT=()
+        for fileCommit in `git diff-tree --no-commit-id --name-only -r $V_HASH_COMMIT`
+        do
+            V_CONT=$((V_CONT+1))
+            V_FILE_COMMIT+=($file)
+            echo "$V_CONT.- Archivo: $fileCommit"
+        done
+
+        echo "El Commit contiene $V_CONT archivos - Se esperaban: $contador"
+        
         echo "Cambio subido con Exito"
     else
         echo "Error al subir los cambios"
