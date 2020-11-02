@@ -62,9 +62,23 @@ else
             echo "$V_CONT.- Archivo: $fileCommit"
         done
 
+        #Se suma el README.MD
+        contador=$((contador+1))
         echo "El Commit contiene $V_CONT archivos - Se esperaban: $contador"
-        
-        echo "Cambio subido con Exito"
+
+        #Evaluamos el repositorio
+        limpio=true
+        for file in `git status --porcelain | sed s/^...//`
+        do
+            limpio=false
+            echo "El repositorio contiene archivos no versionados, verifique"
+        done
+
+        if [ \( "$V_CONT" -eq "$contador" -a "$limpio" = true \) ] ; then
+            echo "Cambio subido con Exito"
+        else
+            echo "Hay diferencias en el repositorio, verifique"
+        fi
     else
         echo "Error al subir los cambios"
         echo "Mensaje: $V_GITPUSH"
