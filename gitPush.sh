@@ -208,6 +208,9 @@ else
         done
 
         if [ \( "$V_CONT" -eq "$contador" -a "$limpio" = true \) ] ; then
+            echo "Contador original: $contador"
+            echo "Contador nuevo: $V_CONT"
+            echo "Limpio: $limpio"
             pushOK
         else
             pushRevisar
