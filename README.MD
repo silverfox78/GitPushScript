@@ -364,3 +364,4 @@ fi
 |-------|------|---------|-------------|---------|
 | 02/11/2020 | 17:53:51:474 | Se inicializa el repositorio - Se modificaron 9 archivo(s) - ( ENVY.TXT GLUTTONY.TXT GREED.TXT LUST.TXT PRIDE.TXT README.MD SLOTH.TXT WRATH.TXT gitPush.sh ) | PonyoBook | sbarr |
 | 02/11/2020 | 18:06:11:029 | Se actualiza el gitPush y Readme - v2 - Se modificaron 2 archivo(s) - ( README.MD gitPush.sh ) | PonyoBook | sbarr |
+| 02/11/2020 | 18:08:05:517 | Se actualiza pecado: Gluttony - Se modificaron 1 archivo(s) - ( GLUTTONY.TXT ) | PonyoBook | sbarr |
