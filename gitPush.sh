@@ -119,7 +119,7 @@ repositorioConCambios()
 
 pushOK()
 {
-    V_LINEA=$(printf "%-60s" "#")
+    V_LINEA=$(printf "%-70s" "#")
     echo -e "$Green${V_LINEA// /#}\n"
     echo -e "$Green\t[ - O K - ]\tSE HA SUBIDO CON EXITO LOS ARCHIVOS\n"
     echo -e "$Green${V_LINEA// /#}\n$Color_Off"
