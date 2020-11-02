@@ -1,1 +1,28 @@
 # GitPush - Script de Ejemplo
+
+
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+
+
+----- 
+
+
+$ touch PRIDE.TXT GREED.TXT LUST.TXT ENVY.TXT GLUTTONY.TXT WRATH.TXT SLOTH.TXT
+
+
+
+------
+
+
+## Actualizaciones del proyecto
+
+
+| Fecha | Hora | Mensaje | Dispositivo | Usuario |
+|-------|------|---------|-------------|---------|
+| 02/11/2020 | 14:55:41:480 | Se edita el README para registrar los push... - Se modificaron 2 archivo(s) - ( README.MD gitPush.sh ) | PonyoBook | sbarr |
+| 02/11/2020 | 15:13:44:779 | Actualizacion del repositorio - Se modificaron 2 archivo(s) - ( README.MD gitPush.sh ) | PonyoBook | sbarr |
