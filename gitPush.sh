@@ -88,6 +88,25 @@ repositorioLimpio()
     echo -e "$Green${V_LINEA// /#}\n$Color_Off"
 }
 
+repositorioConCambios()
+{
+    reset
+    V_LINEA=$(printf "%-50s" "#")
+    echo -e "$Yellow${V_LINEA// /#}\n"
+    echo -e "$Yellow\tSE DETECTAN CAMBIOS\n"
+    echo -e "$Cyan\t\t$contador -$Blue Archivo(s)\n"
+    echo -e "$Yellow${V_LINEA// /#}\n\n$Color_Off"
+
+    echo -e "$Green\tRespositorio: $Color_Off$v_REPO"
+    echo -e "$Green\tProyecto: $Color_Off$v_PROYECTO"
+    echo -e "$Green\tUsuario GIT: $Color_Off$v_USER"
+    echo -e "$Green\tEmail GIT: $Color_Off$v_MAIL"
+    echo -e "$Green\tUsuario: $Color_Off$V_USUARIO"
+    echo -e "$Green\tMaquina: $Color_Off$HOSTNAME"
+
+    echo -e "$Yellow\n\tMensaje:\n\t> $Color_Off$V_MENSAJE"
+}
+
 contador=0
 archivos=()
 
@@ -102,19 +121,6 @@ if [[ $contador == 0 ]]
 then
     repositorioLimpio
 else
-    v_REPO=$(git config remote.origin.url 2>&1)
-    v_USER=$(git config user.name 2>&1)
-    v_MAIL=$(git config user.email 2>&1)
-    v_PROYECTO=$(printf "$v_REPO" | sed 's/.*\///')
-    V_USUARIO=$(whoami)
-
-    echo "Respositorio: $v_REPO"
-    echo "Proyecto: $v_PROYECTO"
-    echo "Usuario GIT: $v_USER"
-    echo "Email GIT: $v_MAIL"
-    echo "Usuario: $V_USUARIO"
-    echo "Maquina: $HOSTNAME"
-
     V_MENSAJE="$1 - Se modificaron $contador archivo(s) - ( "
 
     contador=0
@@ -126,12 +132,19 @@ else
 
     V_MENSAJE="$V_MENSAJE)"
 
+    v_REPO=$(git config remote.origin.url 2>&1)
+    v_USER=$(git config user.name 2>&1)
+    v_MAIL=$(git config user.email 2>&1)
+    v_PROYECTO=$(printf "$v_REPO" | sed 's/.*\///')
+    V_USUARIO=$(whoami)
     V_FECHA=$(date +'%d/%m/%Y')
     V_HORA=$(date +'%H:%M:%S:%3N')
     V_USUARIO=$(whoami)
     V_LOG=$(printf "%b\n" "| $V_FECHA | $V_HORA | $V_MENSAJE | $HOSTNAME | $V_USUARIO |")
 
     echo "$V_LOG">> README.MD
+
+    repositorioConCambios
 
     V_GITADD=$(git add . 2>&1)
     V_GITCOMMIT=$(git commit -am "$V_MENSAJE" 2>&1)
